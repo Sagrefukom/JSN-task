@@ -1,0 +1,42 @@
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    &--footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        margin-top: 50px;
+
+        @media(min-width:600px) {
+            justify-content: space-between;
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        margin: 15px 0;
+
+        &-item {
+            font-family: 'Girassol', cursive;
+            font-size: 30px;
+            line-height: 35px;
+            color: $orange-color;
+        }
+    }
+    &__desc {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 15px 0;
+
+        &-item {
+            font-size: 18px;
+            line-height: 23px;
+            color: $black-text-color;
+        }
+    }
+}

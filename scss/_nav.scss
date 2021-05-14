@@ -1,0 +1,53 @@
+.nav {
+    position: fixed;
+    transform: translateX(100%);
+    width: 100%;
+    z-index: 50;
+    transition: transform .3s ease;
+
+    @media (min-width: 992px) {
+        position: inherit;
+        transform: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    &--burger {
+        transform: translateX(0);
+        transition: transform .3s ease;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 100px;
+        padding: 15px;
+        background-color: $main-green-color;
+    }
+    &__link {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+
+        @media (min-width:992px) {
+            flex-direction: row;
+            width: 65%;
+        }
+
+        &-item {
+            color: #ffffff;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 10px 0;
+
+            @media (min-width:992px) {
+                color: $black-text-color;
+                font-size: 18px;
+                text-transform: initial;
+            }
+        }
+    }
+}

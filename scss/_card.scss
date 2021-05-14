@@ -1,0 +1,110 @@
+.card {
+
+    transition: transform .3s ease;
+    
+    &:hover {
+        transform: scale(1.1);
+        transition: transform .3s ease;
+    }
+    &__status {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__circle {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+
+        &--social {
+            background-color: #4A9D8E;
+        }
+        &--animals {
+            background-color: #90BF55;
+        }
+        &--education {
+            background-color: #EA885E;
+        }
+        &--family {
+            background-color: #FCA8A3;
+        }
+        &--community {
+            background-color: #FCA8A3;
+        }
+        &--medical {
+            background-color: #8374B5;
+        }
+    }
+    &__name {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0 10px;
+    }
+    &__image {
+
+        &-item {
+            width: 260px;;
+        }
+    }
+    &__title {
+        display: flex;
+
+        &-item {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 600;
+        }
+    }
+    &__cost {
+
+        &-raise {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        &-number {
+            font-size: 14px;
+            line-height: 16px;
+            color: $black-text-color;
+        }
+        &-percent {
+            font-size: 14px;
+            line-height: 16px;
+            color: #8374B5;
+        }
+        &-price {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: $black-text-color;
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 300;
+
+            &--bold {
+                font-weight: bold;
+                padding-left: 5px;
+            }
+        }
+        &-slider {
+            position:relative;
+            width:240px;
+            height:4px;
+            border:1px solid #B7BAB7;
+        }
+        &-progress {
+            position:absolute;
+            left:0;
+            top:0;
+            background-color:#71A170;
+            height:100%;
+            width:50%;
+            font-size:0px;
+
+            &--small {
+                width: 15%;
+            }
+        }
+    }
+}

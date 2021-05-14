@@ -1,0 +1,29 @@
+.categories {
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+    &__link {
+        &-item {
+            height: 85px;
+            margin: 15px;
+            transition: transform .3s ease;
+            transform: scale(.9);
+
+            &:hover {
+                transform: scale(1.1);
+                transition: transform .3s ease;
+            }
+
+            @media(min-width:768px) {
+                height: 120px;
+            }
+        }
+    }
+}

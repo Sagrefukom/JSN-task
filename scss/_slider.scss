@@ -1,0 +1,14 @@
+.slider {
+    &__container {
+        min-height: 300px;
+        width: 100%;
+    }
+    &__slide{
+
+        &-block {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+    }
+}

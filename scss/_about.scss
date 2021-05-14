@@ -1,0 +1,85 @@
+.about {
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        &-block {
+            height: 100%;
+            margin: 15px 0;
+            position: relative;
+
+            &--flex {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                min-height: 130px;
+
+                @media(min-width:1030px) {
+                    width: inherit;
+                }
+            }
+            &--list {
+                max-width: 500px;
+                width: 100%;
+            }
+
+            &_text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: left;
+                max-width: 430px;
+                font-size: 18px;
+                line-height: 23px;
+                color: $black-text-color;
+            }
+            &_title {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 28px;
+                color: $black-text-color;
+                margin: 15px 0;
+            }
+        }
+        &-circle {
+            position: absolute;
+            border-radius: 50%;
+
+            &--red {
+                width: 17px;
+                height: 17px;
+                background-color: #F5844D;
+                bottom: 85%;
+                left: 0;
+            }
+            &--green {
+                width: 14px;
+                height: 14px;
+                background-color: #90BF55;
+                bottom: 30%;
+                right: 0;
+            }
+            &--purple {
+                width: 40px;
+                height: 40px;
+                background-color: #FCA8A3;
+                bottom: 0;
+                right: 6%;
+            }
+        }
+        &-image {
+            max-width: 100%;
+        }
+        &-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            text-align: left;
+            min-height: 250px;
+        }
+    }
+}

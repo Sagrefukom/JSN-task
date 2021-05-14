@@ -1,0 +1,26 @@
+.contact {
+    
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__information {
+        width: 100%;
+        background-color: $bg-color;
+        display: flex;
+        justify-content: center;
+
+        @media(min-width: 1200px) {
+            width: 50%;
+        }
+    }
+    &__form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        @media(min-width: 1200px) {
+            width: 50%;
+        }
+    }
+}

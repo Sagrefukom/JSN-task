@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSN</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <header class="header">
+            <div class="header__container">
+                <div class="header__left">
+                    <div class="logo">
+                        <a class="logo__item" href="">
+                            <img class="logo__item-img" src="./img/Logo.png" alt="...">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__right">
+                    <div class="header__burger burger">
+                        <div id="burger-button" class="burger__button">
+                            <div class="burger__button-item"></div>
+                        </div>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav__link">
+                            <li class="nav__link-item">Campaigns</li>
+                            <li class="nav__link-item">Communities</li>
+                            <li class="nav__link-item nav__link-item--dropdown dropdown">
+                                <div class="dropdown__title">
+                                    <p class="dropdown__title-item">About us</p>
+                                </div>
+                                <div class="dropdown__block">
+                                    <a class="dropdown__block-item" href="">How it works?</a>
+                                    <a class="dropdown__block-item" href="">FAQs</a>
+                                    <a class="dropdown__block-item" href="">Terms</a>
+                                    <a class="dropdown__block-item" href="#contact">Contact</a>
+                                    <a class="dropdown__block-item" href="">Reviews</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="sign-up">
+                            <li class="sign-up__item">
+                                <a class="sign-up__search" href="">
+                                    <img class="sign-up__search-item" src="./img/search.svg" alt="...">
+                                </a>
+                            </li>
+                            <li class="sign-up__item">
+                                <a class="sign-up__link" href="">
+                                    <p class="sign-up__link-item">Sign in</p>
+                                </a>
+                            </li>
+                            <li class="sign-up__item">
+                                <div class="sign-up__btn btn">
+                                    <a class="btn btn--small" href="">Sign up</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </header>
+    <main class="main">
+        <section class="welcome-page">
+            <div class="welcome-page__swiper swiper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="swiper-slide__image">
+                            <img class="swiper-slide__image-item" src="./img/bg-image.png" alt="..." >
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide__image">
+                            <img class="swiper-slide__image-item" src="./img/bg-image.png" alt="..." >
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide__image">
+                            <img class="swiper-slide__image-item" src="./img/bg-image.png" alt="..." >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-block">
+                        <div class="swiper-block__container">
+                            <div class="swiper-block__title">
+                                <h1 class="swiper-block__title-item">
+                                    Charitable foundation «Your Help»
+                                </h1>
+                            </div>
+                            <div class="swiper-block__desc">
+                                <h4 class="swiper-block__desc-item">
+                                    People around the world are raisign money for
+                                     what they are passionate about.
+                                </h4>
+                            </div>
+                            <div class="swiper-block__btn btn">
+                                <a class="btn btn--big" href="">Create a campaign</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="welcome-page__categories categories">
+                    <ul class="categories__list">
+                        <li class="categories__list-item">
+                            <a class="categories__link" href="">
+                                <img class="categories__link-item" src="./img/Medical.svg" alt="...">
+                            </a>
+                        </li>
+                        <li class="categories__list-item">
+                            <a class="categories__link" href="">
+                                <img class="categories__link-item" src="./img/Sports.svg" alt="...">
+                            </a>
+                        </li>
+                        <li class="categories__list-item">
+                            <a class="categories__link" href="">
+                                <img class="categories__link-item" src="./img/Animals.svg" alt="...">
+                            </a>
+                        </li>
+                        <li class="categories__list-item">
+                            <a class="categories__link" href="">
+                                <img class="categories__link-item" src="./img/Business.svg" alt="...">
+                            </a>
+                        </li>
+                        <li class="categories__list-item">
+                            <a class="categories__link" href="">
+                                <img class="categories__link-item" src="./img/Community.svg" alt="...">
+                            </a>
+                        </li>
+                        <li class="categories__list-item">
+                            <a class="categories__link" href="">
+                                <img class="categories__link-item" src="./img/Family.svg" alt="...">
+                            </a>
+                        </li>
+                        <li class="categories__list-item">
+                            <a class="categories__link" href="">
+                                <img class="categories__link-item" src="./img/other_categories.svg" alt="...">
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+        </section>
+        <section class="campaings">
+            <div class="container">
+                <div class="container__title">
+                    <h2 class="container__title-item">Campaigns</h2>
+                </div>
+                <div class="container__desc">
+                    <h4 class="container__desc-item">Our project is more than a collection
+                         of charitable aid, it is an association for a common goal.</h4>
+                </div>
+                <div class="campaings__wrapper">
+                    <div class="campaings__wrapper-title">
+                        <p class="campaings__wrapper-title_item">
+                            Popular campaigns
+                        </p>
+                    </div>
+                    <div class="campaings__wrapper-cards cards">
+                        <div class="cards__container">
+                            <div class="cards__card card">
+                                <div class="card__status">
+                                    <div class="card__circle card__circle--social"></div>
+                                    <p class="card__name">Social</p>
+                                </div>
+                                <div class="card__image">
+                                    <img class="card__image-item" src="./img/animals-image.jpg" alt="">
+                                </div>
+                                <div class="card__status">
+                                    <div class="card__circle card__circle--animals"></div>
+                                    <p class="card__name">Animals</p>
+                                </div>
+                                <div class="card__title">
+                                    <p class="card__title-item">
+                                        Construction of a shelter for dogs
+                                    </p>
+                                </div>
+                                <div class="card__cost">
+                                    <div class="card__cost-raise">
+                                        <div class="card__cost-number">$1,000.00 Raised</div>
+                                        <div class="card__cost-percent">50%</div>
+                                    </div>
+                                    <div class="card__cost-slider" >
+                                        <p class="card__cost-progress">&nbsp;</p>
+                                     </div>
+                                     <div class="card__cost-price">
+                                        Goal <span class="card__cost-price card__cost-price--bold">$2,000.00</span>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="cards__card card">
+                                <div class="card__status">
+                                    <div class="card__circle card__circle--education"></div>
+                                    <p class="card__name">Education</p>
+                                </div>
+                                <div class="card__image">
+                                    <img class="card__image-item" src="./img/family-image.jpg" alt="">
+                                </div>
+                                <div class="card__status">
+                                    <div class="card__circle card__circle--family"></div>
+                                    <p class="card__name">Family</p>
+                                </div>
+                                <div class="card__title">
+                                    <p class="card__title-item">
+                                        Help to save the camp
+                                    </p>
+                                </div>
+                                <div class="card__cost">
+                                    <div class="card__cost-raise">
+                                        <div class="card__cost-number">$50 Raised</div>
+                                        <div class="card__cost-percent">2%</div>
+                                    </div>
+                                    <div class="card__cost-slider" >
+                                        <p class="card__cost-progress card__cost-progress--small">&nbsp;</p>
+                                     </div>
+                                     <div class="card__cost-price">
+                                        Goal <span class="card__cost-price card__cost-price--bold">$3,000.00</span>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="cards__card card">
+                                <div class="card__status">
+                                    <div class="card__circle card__circle--social"></div>
+                                    <p class="card__name">Social</p>
+                                </div>
+                                <div class="card__image">
+                                    <img class="card__image-item" src="./img/community-image.jpg" alt="">
+                                </div>
+                                <div class="card__status">
+                                    <div class="card__circle card__circle--community"></div>
+                                    <p class="card__name">Community</p>
+                                </div>
+                                <div class="card__title">
+                                    <p class="card__title-item">
+                                        Port construction
+                                    </p>
+                                </div>
+                                <div class="card__cost">
+                                    <div class="card__cost-raise">
+                                        <div class="card__cost-number">$1,000.00 Raised</div>
+                                        <div class="card__cost-percent">50%</div>
+                                    </div>
+                                    <div class="card__cost-slider" >
+                                        <p class="card__cost-progress">&nbsp;</p>
+                                     </div>
+                                     <div class="card__cost-price">
+                                        Goal <span class="card__cost-price card__cost-price--bold">$2,000.00</span>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="cards__card card">
+                                <div class="card__status">
+                                    <div class="card__circle card__circle--social"></div>
+                                    <p class="card__name">Social</p>
+                                </div>
+                                <div class="card__image">
+                                    <img class="card__image-item" src="./img/medical-image.jpg" alt="">
+                                </div>
+                                <div class="card__status">
+                                    <div class="card__circle card__circle--medical"></div>
+                                    <p class="card__name">Medical</p>
+                                </div>
+                                <div class="card__title">
+                                    <p class="card__title-item">
+                                        Fundraising for treatment
+                                    </p>
+                                </div>
+                                <div class="card__cost">
+                                    <div class="card__cost-raise">
+                                        <div class="card__cost-number">$50 Raised</div>
+                                        <div class="card__cost-percent">2%</div>
+                                    </div>
+                                    <div class="card__cost-slider" >
+                                        <p class="card__cost-progress card__cost-progress--small">&nbsp;</p>
+                                     </div>
+                                     <div class="card__cost-price">
+                                        Goal <span class="card__cost-price card__cost-price--bold">$3,000.00</span>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaings__wrapper-link">
+                        <a class="campaings__wrapper-link_item" href="">
+                            See more >
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="terms">
+            <div class="container">
+                <div class="container__title">
+                    <h2 class="container__title-item">We have everything you need</h2>
+                </div>
+                <div class="terms__wrapper">
+                    <div class="terms__wrapper-block">
+                        <div class="terms__wrapper-block_title">Worldwide leader</div>
+                        <div class="terms__wrapper-block_text">Whole world trusts us. We are reliable
+                            fundraising platform.</div>
+                    </div>
+                    <div class="terms__wrapper-block">
+                        <div class="terms__wrapper-block_title">Simple setup</div>
+                        <div class="terms__wrapper-block_text">You can personalize and share
+                            in just a few minutes.</div>
+                    </div>
+                    <div class="terms__wrapper-block">
+                        <div class="terms__wrapper-block_title">24/7 expert advice</div>
+                        <div class="terms__wrapper-block_text">Our best-in-class customer 
+                            happiness agents will answer 
+                            your questions, day or night.</div>
+                    </div>
+                    <div class="terms__wrapper-block">
+                        <div class="terms__wrapper-block_title">Mobile app</div>
+                        <div class="terms__wrapper-block_text">Together  makes it 
+                            simple to launch and manage your 
+                            campaign on the go.</div>
+                    </div>
+                    <div class="terms__wrapper-block">
+                        <div class="terms__wrapper-block_title">Social reach</div>
+                        <div class="terms__wrapper-block_text">Harness the power of social 
+                            media to spread your story 
+                            and get more support.</div>
+                    </div>
+                    <div class="terms__wrapper-block">
+                        <div class="terms__wrapper-block_title">Fast and secure</div>
+                        <div class="terms__wrapper-block_text">Most organizers can withdraw funds
+                             immediately and our team works around the 
+                             clock to protect against fraud.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="container__title">
+                    <h2 class="container__title-item">About Us</h2>
+                </div>
+                <div class="about__wrapper">
+                    <div class="about__wrapper-block">
+                        <img class="about__wrapper-image" src="./img/about_us-image.jpg" alt="...">
+                    </div>
+                    <div class="about__wrapper-block about__wrapper-block--flex">
+                        <div class="about__wrapper-circle about__wrapper-circle--red"></div>
+                        <div class="about__wrapper-circle about__wrapper-circle--green"></div>
+                        <div class="about__wrapper-circle about__wrapper-circle--purple"></div>
+                        <p class="about__wrapper-block_text">     
+                            The website connects community organizations to their
+                            supporters who can make donations using debit or credit card.
+                        </p>
+                    </div>
+                    <div class="about__wrapper-block about__wrapper-block--list">
+                        <div class="about__wrapper-block_title">
+                            «Your Help» helps registered 
+                            community organizations
+                        </div>
+                        <div class="about__wrapper-list list">
+                            <div class="list__item">
+                                <div class="list__item-circle list__item-circle--first">1</div>
+                                <div class="list__item-text">Track donations received</div>
+                            </div>
+                            <div class="list__item">
+                                <div class="list__item-circle list__item-circle--second">2</div>
+                                <div class="list__item-text">Reward/recognize donors</div>
+                            </div>
+                            <div class="list__item">
+                                <div class="list__item-circle list__item-circle--third">3</div>
+                                <div class="list__item-text">Transparency and accountability</div>
+                            </div>
+                            <div class="list__item">
+                                <div class="list__item-circle list__item-circle--fourth">4</div>
+                                <div class="list__item-text">Annual reporting</div>
+                            </div>
+                            <div class="list__item">
+                                <div class="list__item-circle list__item-circle--fifth">5</div>
+                                <div class="list__item-text">Global platform</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__wrapper-block about__wrapper-block--list">
+                        <div class="about__wrapper-block_title">
+                            «Your Help» helps supporters
+                        </div>
+                        <div class="about__wrapper-list list">
+                            <div class="list__item">
+                                <div class="list__item-circle list__item-circle--first">1</div>
+                                <div class="list__item-text">Make cashless donations</div>
+                            </div>
+                            <div class="list__item">
+                                <div class="list__item-circle list__item-circle--second">2</div>
+                                <div class="list__item-text">Track your donations</div>
+                            </div>
+                            <div class="list__item">
+                                <div class="list__item-circle list__item-circle--third">3</div>
+                                <div class="list__item-text">Stay connected</div>
+                            </div>
+                            <div class="list__item">
+                                <div class="list__item-circle list__item-circle--fourth">4</div>
+                                <div class="list__item-text">Collaborate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <div class="container__title">
+                    <h2 class="container__title-item">Reviews</h2>
+                </div>
+                <div class="reviews__slider slider">
+                    <div class="swiper-container slider__container">
+                        <div class="swiper-wrapper slider__wrapper">
+                          <div class="swiper-slide slider__slide">
+                              <div class="slider__slide-block block">
+                                <div class="block__review">
+                                    <div class="block__review-left">
+                                        <img class="block__review-left_image" src="./img/review-1.jpg" alt="">
+                                        <div class="block__review-left_circle block__review-left_circle--yellow">5+</div>
+                                    </div>
+                                    <div class="block__review-right">
+                                        <div class="block__review-right_name">
+                                            — Monica S.
+                                        </div>
+                                        <div class="block__review-right_text">
+                                            “This website rocks! I raised close to $10,000
+                                             in less than 48 hours for my nephew’s medical
+                                              needs, and your customer service was so prompt
+                                               and helpful.”
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block__review block__review--hidden">
+                                    <div class="block__review-left">
+                                        <img class="block__review-left_image" src="./img/review-2.jpg" alt="">
+                                        <div class="block__review-left_circle block__review-left_circle--blue">5+</div>
+                                    </div>
+                                    <div class="block__review-right">
+                                        <div class="block__review-right_name">
+                                            — Monica S.
+                                        </div>
+                                        <div class="block__review-right_text">
+                                            “This website rocks! I raised close to $10,000
+                                             in less than 48 hours for my nephew’s medical
+                                              needs, and your customer service was so prompt
+                                               and helpful.”
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide slider__slide">
+                            <div class="slider__slide-block block">
+                                <div class="block__review">
+                                    <div class="block__review-left">
+                                        <img class="block__review-left_image" src="./img/review-1.jpg" alt="">
+                                        <div class="block__review-left_circle block__review-left_circle--yellow">5+</div>
+                                    </div>
+                                    <div class="block__review-right">
+                                        <div class="block__review-right_name">
+                                            — Monica S.
+                                        </div>
+                                        <div class="block__review-right_text">
+                                            “This website rocks! I raised close to $10,000
+                                             in less than 48 hours for my nephew’s medical
+                                              needs, and your customer service was so prompt
+                                               and helpful.”
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block__review block__review--hidden">
+                                    <div class="block__review-left">
+                                        <img class="block__review-left_image" src="./img/review-2.jpg" alt="">
+                                        <div class="block__review-left_circle block__review-left_circle--blue">5+</div>
+                                    </div>
+                                    <div class="block__review-right">
+                                        <div class="block__review-right_name">
+                                            — Monica S.
+                                        </div>
+                                        <div class="block__review-right_text">
+                                            “This website rocks! I raised close to $10,000
+                                             in less than 48 hours for my nephew’s medical
+                                              needs, and your customer service was so prompt
+                                               and helpful.”
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="swiper-slide slider__slide">
+                            <div class="slider__slide-block block">
+                                <div class="block__review">
+                                    <div class="block__review-left">
+                                        <img class="block__review-left_image" src="./img/review-1.jpg" alt="">
+                                        <div class="block__review-left_circle block__review-left_circle--yellow">5+</div>
+                                    </div>
+                                    <div class="block__review-right">
+                                        <div class="block__review-right_name">
+                                            — Monica S.
+                                        </div>
+                                        <div class="block__review-right_text">
+                                            “This website rocks! I raised close to $10,000
+                                             in less than 48 hours for my nephew’s medical
+                                              needs, and your customer service was so prompt
+                                               and helpful.”
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block__review block__review--hidden">
+                                    <div class="block__review-left">
+                                        <img class="block__review-left_image" src="./img/review-2.jpg" alt="">
+                                        <div class="block__review-left_circle block__review-left_circle--blue">5+</div>
+                                    </div>
+                                    <div class="block__review-right">
+                                        <div class="block__review-right_name">
+                                            — Monica S.
+                                        </div>
+                                        <div class="block__review-right_text">
+                                            “This website rocks! I raised close to $10,000
+                                             in less than 48 hours for my nephew’s medical
+                                              needs, and your customer service was so prompt
+                                               and helpful.”
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="container__title">
+                    <h2 class="container__title-item">Contacts</h2>
+                </div>
+                <div class="container__desc">
+                    <h4 class="container__desc-item">Just write us a message!</h4>
+                </div>
+            </div>
+            <div class="contact__wrapper">
+                <div class="contact__information information">
+                    <div class="information__container">
+                        <div class="information__title">Contact information</div>
+                        <div class="information__subtitle">Fill in the form and our team will get back to you within 24 hours.</div>
+                        <div class="information__paragraph">
+                            <div class="information__link">
+                                <img class="information__link-item" src="./img/Mail_white.svg" alt="...">
+                            </div>
+                            <div class="information__desc">
+                                <a class="information__desc-item" href="">charitablefoundation@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="information__paragraph">
+                            <div class="information__link">
+                                <img class="information__link-item" src="./img/Geo_white.svg" alt="...">
+                            </div>
+                            <div class="information__desc">
+                                <a class="information__desc-item" href="">«Your Help» st. Piraeus 2C 04-49 Warsaw, Poland</a>
+                            </div>
+                        </div>
+                        <div class="information__group">
+                            <div class="information__link">
+                                <img class="information__link-item" src="./img/LinkedIN_white.svg" alt="...">
+                            </div>
+                            <div class="information__link">
+                                <img class="information__link-item" src="./img/Facebook_white.svg" alt="...">
+                            </div>
+                            <div class="information__link">
+                                <img class="information__link-item" src="./img/VK_white.svg" alt="...">
+                            </div>
+                        </div>
+                        <div class="information__circle information__circle--pink"></div>
+                        <div class="information__circle information__circle--purple"></div>
+                        <div class="information__circle information__circle--blue"></div>
+                    </div>
+                </div>
+                <div class="contact__form form">
+                    <div class="form__container">
+                        <form class="form__item" >
+                            <div class="form__input">
+                                <div class="form__input-title form__input-title--name">Full name</div>
+                                <input type="text" class="form__input-item form__input-item--name">
+                            </div>
+                            <div class="form__input">
+                                <div class="form__input-title">Email</div>
+                                <input type="text" class="form__input-item form__input-item--email">
+                            </div>
+                            <div class="form__input">
+                                <div class="form__input-title">Your message</div>
+                                <input type="text" class="form__input-item form__input-item--message" placeholder="Write your message">
+                            </div>
+                            <div class="form__circle form__circle--pink"></div>
+                            <div class="form__circle form__circle--purple"></div>
+                            <div class="form__circle form__circle--blue"></div>
+                            
+                            
+                            <button class="form__btn btn btn--big">Send message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container container--footer">
+            <div class="footer__left">
+                <div class="logo">
+                    <a class="logo__item" href="">
+                        <img class="logo__item-img" src="./img/Logo.png" alt="...">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__right">
+                <div class="footer__navigation">
+                    <div class="footer__navigation-link">
+                        <a class="footer__navigation-link_item" href="">FAQs</a>
+                    </div>
+                    <div class="footer__navigation-link">
+                        <a class="footer__navigation-link_item" href="">About Us</a>
+                    </div>
+                    <div class="footer__navigation-link">
+                        <a class="footer__navigation-link_item" href="">Terms</a>
+                    </div>
+                    <div class="footer__navigation-link">
+                        <a class="footer__navigation-link_item" href="">Charitable foundation</a>
+                    </div>
+                </div>
+                <div class="footer__navigation footer__navigation--hidden">
+                    <div class="footer__navigation-link">
+                        <a class="footer__navigation-link_item" href="">Privacy</a>
+                    </div>
+                    <div class="footer__navigation-link">
+                        <a class="footer__navigation-link_item" href="">Contact</a>
+                    </div>
+                    <div class="footer__navigation-link">
+                        <a class="footer__navigation-link_item" href="">Refund Policy</a>
+                    </div>
+                    <div class="footer__navigation-link">
+                        <a class="footer__navigation-link_item" href="">How it works</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyrights">
+            © 2020. «Your Help». Charitable foundation.
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.min.js"></script> 
+</body>
+</html>

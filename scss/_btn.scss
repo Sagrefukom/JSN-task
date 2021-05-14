@@ -1,0 +1,34 @@
+.btn {
+    color: #FFFFFF;
+    background-color: $main-green-color;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+    box-shadow: 2px 2px $main-green-color;
+    position: relative;
+    top: 0;
+
+    &:active {
+        top: 3px;
+        box-shadow: 0px 0px $main-green-color;
+    }
+
+    @media(min-width:480px) {
+        max-width: 222px;
+    }
+
+    &--small {
+        width: 85px;
+        height: 40px;
+    }
+    &--big {
+        width: 222px;
+        height: 40px;
+
+        @media(min-width:480px) {
+            height: 48px;
+        }
+    }
+}

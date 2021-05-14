@@ -1,0 +1,38 @@
+.sign-up {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $bg-color;
+    min-height: 60px;
+    border-radius: 8px;
+
+    @media(min-width:992px) {
+        min-height: initial;
+        width: 25%;
+    }
+    
+    &__item {
+        font-size: 18px;
+        line-height: 23px;
+        text-transform: uppercase;
+
+        @media(min-width:992px) {
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: initial;
+        }
+    }
+    &__search {
+
+    }
+    &__link {
+        color: $main-green-color;
+
+        @media(min-width:992px) {
+            color: $black-text-color;
+        }
+    }
+    &__btn {
+        
+    }
+}

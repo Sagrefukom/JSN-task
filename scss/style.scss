@@ -1,0 +1,36 @@
+@import 'fonts';
+@import 'null-styles';
+@import 'variables';
+@import 'header';
+@import 'logo';
+@import 'nav';
+@import 'burger';
+@import 'dropdown';
+@import 'sign-up';
+@import 'btn';
+@import 'welcome-page';
+@import 'swiper';
+@import 'categories';
+@import 'container';
+@import 'campaings';
+@import 'cards';
+@import 'card';
+@import 'terms';
+@import 'about';
+@import 'list';
+@import 'slider';
+@import 'block';
+@import 'contact';
+@import 'information';
+@import 'form';
+@import 'footer';
+
+body {
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}

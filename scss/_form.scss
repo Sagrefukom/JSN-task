@@ -1,0 +1,97 @@
+.form {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        position: relative;
+        max-width: 400px;
+        width: 100%;
+        
+    }
+    &__item {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    &__input {
+
+        &-title {
+            font-size: 16px;
+            line-height: 20px;
+            color: $black-text-color;
+            padding: 5px 0;
+
+            &--name {
+                color: $main-green-color;
+            }
+        }
+        &-item {
+            width: 290px;
+            height: 35px;
+            border: 1px solid $main-green-color;
+            border-radius: 4px;
+            padding-left: 15px;
+
+            @media(min-width: 480px) {
+                width: 400px;
+            }
+            &--message {
+                height: 100px;
+
+                &::placeholder {
+                    transform: translateY(-30px);
+                }
+            }
+        }
+    }
+    &__btn {
+        align-self: center;
+        @media(min-width: 480px) {
+            align-self: flex-end;
+        }
+        
+    }
+    &__circle {
+        position: absolute;
+        border-radius: 50%;
+
+        &--pink {
+            width: 14px;
+            height: 14px;
+            background-color: #FCA8A3;
+            top: 6%;
+            right: 22%;
+
+            @media(min-width: 992px) {
+                right: -30%;
+                top: 10%;
+            }
+        }
+        &--purple {
+            width: 23px;
+            height: 23px;
+            background-color: #9080B6;
+            top: 3%;
+            right: 9%;
+
+            @media(min-width: 992px) {
+                right: -40%;
+            }
+        }
+        &--blue {
+            width: 22px;
+            height: 22px;
+            background-color: #64BCC7;
+            bottom: 9%;
+            left: 8%;
+
+            // @media(min-width: 768px) {
+            //     display: flex;
+            // }
+        }
+    }
+}

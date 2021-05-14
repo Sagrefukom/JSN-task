@@ -1,0 +1,37 @@
+.list {
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &-circle {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &--first {
+                background-color: #FFFBD8;
+            }
+            &--second {
+                background-color: #FFE3D8;
+            }
+            &--third {
+                background-color: #D8F6FF;
+            }
+            &--fourth {
+                background-color: #D8E5FF;
+            }
+            &--fifth {
+                background-color: #D8FFDE;
+            }
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 18px;
+            padding-left: 10px;
+        }
+    }
+}
